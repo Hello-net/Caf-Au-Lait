@@ -25,11 +25,11 @@ public class Spawner : MonoBehaviour {
 	}
 	public void SpawnCube(){
 		//問題９
-        //ゲームオブジェクトのnewCubeをSpawnPointに生成している
+        //ゲームオブジェクトのnewCube宣言しSpawnPointに生成している
 		GameObject newCube = (GameObject)Instantiate (cube, SpownPoint);
 		if(ClickCount == 0){
 			//問題１０
-            //ClickCountが0のときのnewCubeのスケールを設定している
+            //ClickCountが0のときのnewCubeのlocalscaleを2.5倍にを設定している
 			newCube.transform.localScale *= 2.5f;
 		}
 		else if(ClickCount % 15 == 0){
